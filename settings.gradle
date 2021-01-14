@@ -1,0 +1,5 @@
+rootProject.name = 'exploration-gradle-parent'
+include 'parent-documentation'
+include 'parent-application'
+include 'parent-contract'
+

@@ -1,0 +1,12 @@
+bmf:
+  documentation:
+    paths:
+      ui: /swagger-ui
+      config: /swagger-ui/config
+#      specification: /api-docs/api-spec-v1.yml
+#      index-redirection: true
+    versions:
+      - name: V1
+        url: /swagger/api-spec-v1.yml
+      - name: V2
+        url: /swagger/api-spec-v2.yml

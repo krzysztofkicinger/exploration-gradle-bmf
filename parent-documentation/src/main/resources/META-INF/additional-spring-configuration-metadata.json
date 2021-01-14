@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "bmf.documentation.paths.ui",
+      "type": "java.lang.String",
+      "description": "Endpoint path which Swagger documentation should be exposed on."
+    },
+    {
+      "name": "bmf.documentation.paths.specification",
+      "type": "java.lang.String",
+      "description": "Path to swagger specification file."
+    }
+  ]
+}

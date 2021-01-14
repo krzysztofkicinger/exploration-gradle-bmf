@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  version: '3.0'
+  title: Boot Microservice Foundation Sample Application V2
+  description: Boot Microservice Foundation Sample Application V2
+  contact:
+    name: Krzysztof Kicinger
+    email: krzysztofkicinger.public@gmail.com
+tags:
+  - name: Configuration
+paths:
+  /v1/api-version:
+    get:
+      tags:
+        - Configuration
+      operationId: getV2Version
+      summary: Retrieves version of the API
+      description: Retrieves version of the API
+      responses:
+        '200':
+          description: Success

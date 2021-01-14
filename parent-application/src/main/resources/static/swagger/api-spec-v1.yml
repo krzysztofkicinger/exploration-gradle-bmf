@@ -1,0 +1,52 @@
+openapi: 3.0.0
+info:
+  version: '3.0'
+  title: Boot Microservice Foundation Sample Application V1
+  description: Boot Microservice Foundation Sample Application V1
+  contact:
+    name: Krzysztof Kicinger
+    email: krzysztofkicinger.public@gmail.com
+tags:
+  - name: Configuration
+paths:
+  /v1/api-version/{calculationId}:
+    get:
+      tags:
+        - Configuration
+      operationId: getV1Version
+      summary: Retrieves version of the API
+      description: Retrieves version of the API
+      parameters:
+        - $ref: "#/components/parameters/AdditionalTestHeader"
+        - $ref: "#/components/parameters/CalculationId"
+      requestBody:
+        content:
+          application/vnd.mycompany.myapp.v2+json:
+            schema:
+              type: Optional Promo Code such as
+              example: Promo Code
+      responses:
+        '200':
+          description: Success
+
+components:
+  schemas:
+    EnumTest:
+      type: string
+      enum:
+        - test1
+        - test2
+  parameters:
+    CalculationId:
+      in: path
+      name: calculationId
+      required: true
+      schema:
+        type: string
+        format: uuid
+    AdditionalTestHeader:
+      in: headers
+      name: X-TEST
+      required: true
+      schema:
+        $ref: "#/components/schemas/EnumTest"
